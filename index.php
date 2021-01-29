@@ -33,7 +33,7 @@ $f3->route('GET /order', function () {
 //define an order 2  route
 $f3->route('POST /order2', function () {
 
-    var_dump($_POST);
+    //var_dump($_POST);
     if(isset($_POST['pet'])) {
         $_SESSION['pet'] = $_POST['pet'];
     }
@@ -47,8 +47,7 @@ $f3->route('POST /order2', function () {
 //define an order 3 route
 $f3->route('POST /order3', function () {
 
-    var_dump($_POST);
-
+    //var_dump($_POST);
     if(isset($_POST['name'])) {
         $_SESSION['name'] = $_POST['name'];
     }
@@ -58,8 +57,8 @@ $f3->route('POST /order3', function () {
 
 //define a summary  route
 $f3->route('POST /summary', function () {
-    var_dump($_POST);
 
+    //var_dump($_POST);
     if(isset($_POST['additions'])) {
         $_SESSION['additions'] = implode(" ", $_POST['additions']);
     }
