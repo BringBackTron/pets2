@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<include href="views/header.html"></include>
+
 <body>
+
+<div class="container">
+
+    <form action="summary" method="post" class="form-horizontal">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Additional Pet Items:</label>
+            <div class="col-sm-4">
+                <div class="col-sm-4">
+
+                    <input type="checkbox" id="carrier" name="additions[]" value="carrier">
+                    <label for="carrier"> Carrier</label><br>
+                    <input type="checkbox" id="brush" name="condiments[]" value="brush">
+                    <label for="brush"> Grooming Brush</label><br>
+                    <input type="checkbox" id="leash" name="condiments[]" value="leash">
+                    <label for="leash"> Leash</label><br>
+                    <input type="checkbox" id="treats" name="condiments[]" value="treats">
+                    <label for="treats"> Treats</label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-3 ">
+            <input class="form-control btn btn-default" type="submit" value="Submit Order">
+        </div>
+
+    </form>
+</div>
 
 </body>
 </html>
