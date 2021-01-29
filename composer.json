@@ -1,0 +1,16 @@
+{
+  "name": "greenluc/SDEV328inclass/food",
+  "authors": [
+    {
+      "name": "George McMullen",
+      "email": "gmcmullen@mail.greenriver.edu"
+    },
+    {
+      "name": "Tiffany Ferderer",
+      "email": "tferderer@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
