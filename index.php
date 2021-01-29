@@ -10,5 +10,5 @@ $f3->set('DEBUG', 3);
 
 $f3->route('GET /pets2', function () {
     $view = new Template();
-    echo $view->render('My Pets');
+    echo $view->render('views/home.html');
 });
