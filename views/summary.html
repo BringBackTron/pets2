@@ -1,0 +1,19 @@
+<include href="views/header.html"></include>
+
+<body>
+
+<form method="get" action="order3">
+    <h1>Order Summary</h1>
+    <h2>Thank you for your order!</h2>
+
+    <h3>You ordered a {{ @SESSION.color }} {{ @SESSION.pet }}</h3>
+
+
+    <a href="{{ @BASE }}">Home</a> ||
+    <a href="order">Place another order</a>
+
+
+</form>
+
+</body>
+</html>
