@@ -44,17 +44,29 @@ $f3->route('POST /order2', function () {
     echo $view->render('views/pet-order2.html');
 });
 
+//define an order 3 route
+$f3->route('POST /order3', function () {
+
+    var_dump($_POST);
+
+    if(isset($_POST['name'])) {
+        $_SESSION['name'] = $_POST['name'];
+    }
+    $view = new Template();
+    echo $view->render('views/pet-order3.html');
+});
+
 //define a summary  route
-//$f3->route('POST /summary', function () {
-//    var_dump($_POST);
-//
-//    if(isset($_POST['conds'])) {
-//        $_SESSION['conds'] = implode(" ", $_POST['conds']);
-//    }
-//
-//    $view = new Template();
-//    echo $view->render('views/summary.html');
-//});
+$f3->route('POST /summary', function () {
+    var_dump($_POST);
+
+    if(isset($_POST['additions'])) {
+        $_SESSION['additions'] = implode(" ", $_POST['additions']);
+    }
+
+    $view = new Template();
+    echo $view->render('views/summary.html');
+});
 
 //run fat free
 $f3->run();
